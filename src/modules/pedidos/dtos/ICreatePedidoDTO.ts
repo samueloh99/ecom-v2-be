@@ -1,0 +1,45 @@
+export default interface ICreatePedidoDTO {
+  pedido_tipo: string;
+  pedido_peso: string;
+  pedido_qtde: number;
+  pedido_prazo: number;
+  pedido_desconto: number;
+  pedido_carteira: number;
+  pedido_total: number;
+  pedido_geral: number;
+  pedido_cancelado: string;
+  usuario_id: number;
+  usuario_id_pagarme: string;
+  card_id_pagarme: string;
+  endereco_id: number;
+  frete_nome: string;
+  frete_titulo: string;
+  frete_prazo: number;
+  frete_valor: number;
+  frete_embalagem: string;
+  pagamento_nome: string;
+  pagamento_titulo: string;
+  pagamento_valor: string;
+  pagamento_link: string;
+  desconto_id: string;
+  parcela_numero: number;
+  parcela_valor: number;
+  parcela_desconto: number;
+  cartao_nsu: string;
+  cartao_bandeira: string;
+  status_entrega: number;
+  status_pagamento: number;
+  utm_campaign: string;
+  utm_source: string;
+  utm_medium: string;
+  utm_content: string;
+  utm_term: string;
+  data_aprovado: Date;
+  data_entrega: Date;
+  produtos: {
+    code: string;
+    amount: number;
+    description: string;
+    quantity: number;
+  }[];
+}
